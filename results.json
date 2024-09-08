@@ -1,0 +1,140 @@
+{
+  "config": {
+    "configFile": "z:\\node\\pw-mobile-testing\\playwright-mobile-QAConf\\playwright.config.ts",
+    "rootDir": "z:/node/pw-mobile-testing/playwright-mobile-QAConf",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "z:/node/pw-mobile-testing/playwright-mobile-QAConf/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "z:/node/pw-mobile-testing/playwright-mobile-QAConf",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.47.0",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "src\\tests\\gestures.spec.ts",
+      "file": "src/tests/gestures.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Gestures",
+          "file": "src/tests/gestures.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "double tap gesture",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 387,
+                      "error": {
+                        "message": "Error: page.goto: Protocol error (Playwright.navigate): Cannot navigate to invalid URL\nCall log:\n  \u001b[2m- navigating to \"/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Protocol error (Playwright.navigate): Cannot navigate to invalid URL\nCall log:\n  \u001b[2m- navigating to \"/\", waiting until \"load\"\u001b[22m\n\n    at z:\\node\\pw-mobile-testing\\playwright-mobile-QAConf\\src\\tests\\gestures.spec.ts:69:20",
+                        "location": {
+                          "file": "z:\\node\\pw-mobile-testing\\playwright-mobile-QAConf\\src\\tests\\gestures.spec.ts",
+                          "column": 20,
+                          "line": 69
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 67 |\u001b[39m\n \u001b[90m 68 |\u001b[39m     test(\u001b[32m'double tap gesture'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m         \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'input[name=\"user-name\"]'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Replace with your element selector\u001b[39m\n \u001b[90m 71 |\u001b[39m         \u001b[36mif\u001b[39m (element) {\n \u001b[90m 72 |\u001b[39m             \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mdblclick()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "z:\\node\\pw-mobile-testing\\playwright-mobile-QAConf\\src\\tests\\gestures.spec.ts",
+                            "column": 20,
+                            "line": 69
+                          },
+                          "message": "Error: page.goto: Protocol error (Playwright.navigate): Cannot navigate to invalid URL\nCall log:\n  \u001b[2m- navigating to \"/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 67 |\u001b[39m\n \u001b[90m 68 |\u001b[39m     test(\u001b[32m'double tap gesture'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m         \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'input[name=\"user-name\"]'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Replace with your element selector\u001b[39m\n \u001b[90m 71 |\u001b[39m         \u001b[36mif\u001b[39m (element) {\n \u001b[90m 72 |\u001b[39m             \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mdblclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at z:\\node\\pw-mobile-testing\\playwright-mobile-QAConf\\src\\tests\\gestures.spec.ts:69:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-08T22:29:57.040Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "z:\\node\\pw-mobile-testing\\playwright-mobile-QAConf\\src\\tests\\gestures.spec.ts",
+                        "column": 20,
+                        "line": 69
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "82db564365d7578e8844-4c2966fb0fc9957be874",
+              "file": "src/tests/gestures.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-09-08T22:29:53.946Z",
+    "duration": 3655.4400000000023,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
