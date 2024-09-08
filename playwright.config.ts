@@ -54,7 +54,7 @@ export default defineConfig({
             /* Test against mobile viewports. */
             {
                 name: 'Mobile Chrome',
-                use: {...devices['iPhone 12']},
+                use: {...devices['iPhone XR']},
             },
             // {
             //   name: 'Mobile Safari',
